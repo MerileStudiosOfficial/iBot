@@ -144,7 +144,7 @@ if(!isIBotRunning) {
 			} else {
 				switch (cmd) {
 				case "help":
-					API.sendChat(IBot.iBot + " user commands: help, cookie @{User}, dj, song, rip, about, songsucks, gaydj, portrait, Waifu");
+					API.sendChat(IBot.iBot + " user commands: help, cookie @{User}, dj, song, rip, about, songsucks, gaydj, portrait, Waifu, asshole, sex, ayylmao");
 					break;
 				case "dj":
 					API.sendChat("Current DJ: @" + API.getDJ() + "!");
@@ -169,6 +169,18 @@ if(!isIBotRunning) {
 					break;
 				case "test":
 					API.sendChat("Hey @" + user + " im working you fucking retarded nigger");
+					break;
+				case "asshole":
+					API.sendChat("Hey @" + user + " is a retarded asshole");
+					break;
+				case "waifu":
+					API.sendChat("OMG @" + user + " is mah waifu :3");
+					break;
+				case "sex":
+					API.sendChat("lol @" + user + " you wish faggot");
+					break;
+				case "ayylmao":
+					API.sendChat("AYY LMAO AYY LMAO");
 					break;
 				default:
 					API.sendChat("Command: " + cmd + ", was not found!");
