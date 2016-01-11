@@ -118,10 +118,10 @@ if(!isIBotRunning) {
 		}
 	};
 	function userJoinMsg(data) {
-		API.sendChat(":wave: Welcome/Welcome back to the room @" + data.user.username + "! :wave:");
+		API.sendChat(":wave: Welcome" + data.user.username + " now sit down nigga! :wave:");
 	}
 	function userLeaveMsg(data) {
-		API.sendChat(":wave: Goodbye @" + data.user.username + "! :wave:");
+		API.sendChat(":wave: RIP @" + data.user.username + " F to pay respects! :wave:");
 	}
 	function commandHandler(data) {
 		var msg = data.message;
@@ -144,13 +144,31 @@ if(!isIBotRunning) {
 			} else {
 				switch (cmd) {
 				case "help":
-					API.sendChat(IBot.iBot + " user commands: help, cookie @{User}, dj, song");
+					API.sendChat(IBot.iBot + " user commands: help, cookie @{User}, dj, song, rip, about, songsucks, gaydj, portrait, Waifu");
 					break;
 				case "dj":
 					API.sendChat("Current DJ: @" + API.getDJ() + "!");
 					break;
 				case "song":
 					API.sendChat("Current Song: " + API.getMedia() + "!");
+					break;
+				case "portrait":
+					API.sendChat("my portrait http://i.imgur.com/vowr1b6.png");
+					break;
+				case "rip":
+					API.sendChat("press f to pay respects");
+					break;
+				case "about":
+					API.sendChat("I am Sue Sakamoto Raidforums premier dubtrack bot :kappa:");
+					break;
+				case "songsucks":
+					API.sendChat("OMG " + API.getMedia() + " sucks ass T-T!");
+					break;
+				case "gaydj":
+					API.sendChat("OMFG @" + API.getDJ() + " is a faggot and needs to kill themself");
+					break;
+				case "test":
+					API.sendChat("Hey @" + user + " im working you fucking retarded nigger");
 					break;
 				default:
 					API.sendChat("Command: " + cmd + ", was not found!");
